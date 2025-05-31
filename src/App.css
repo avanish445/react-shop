@@ -3,16 +3,18 @@
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
   padding: 0px 10px;
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
   height: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .header .logo {
   display: flex;
@@ -29,18 +31,31 @@
 }
 .nav {
   display: flex;
-  gap: 15px;
+  gap: 10px;
+  align-items: center;
 }
-.nav a {
+.nav .icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 8px;
+}
+.nav a,
+p {
   text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  /* font-weight: bold; */
   color: #000;
+  &:hover {
+    color: #3450dc;
+    background-color: rgba(52, 80, 220, 0.1);
+  }
 }
 .header .active {
-  color: #3450dc;
-  text-decoration: underline;
-  text-decoration-color: #3450dc;
+  color: #fff;
+  background-color: #3450dc;
+  /* text-decoration: underline; */
 }
 .header .pending {
   color: red;
@@ -75,4 +90,32 @@
   /* margin-top: 50px;
   margin-bottom: 50px; */
   padding: 20px;
+}
+.profile-icon {
+  position: relative;
+  display: inline-block;
+}
+.user-profile {
+  display: none;
+  position: absolute;
+  top: 20px;
+  padding: 10px 20px;
+  right: 10px;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.user-profile h4,
+hr {
+  color: #000;
+}
+.user-profile hr {
+  font-size: small;
+  color: gray;
+  border: 1px solid #ddd;
+}
+.profile-icon:hover .user-profile {
+  display: block;
 }

@@ -1,0 +1,89 @@
+.login-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* flex-wrap: wrap; */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  /* gap: 20px; */
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.left-panel img {
+  width: 100%;
+  height: auto;
+}
+
+.right-panel h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* margin-bottom: 2rem; */
+  color: #1e1e2f;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.login-form input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.form-options a {
+  text-decoration: none;
+  color: #4b6cb7;
+}
+
+.login-form button {
+  background-color: #3450dc;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.signup-text {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.signup-text a {
+  color: #4b6cb7;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.store-buttons img {
+  height: 40px;
+}
+.error-message {
+  color: red;
+  padding: 10px;
+  font-weight: bold;
+  background-color: rgba(52, 80, 220, 0.1);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
